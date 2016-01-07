@@ -55,6 +55,12 @@ public class ArtikelDAO implements IArtikelDAO {
 
     }
 
+
+    @Override
+    public ArrayList<Artikel> searchArtikel(Artikel artikel) throws DAOException {
+
+        ArrayList<Artikel> result= new ArrayList<Artikel>();
+
     /*public Artikel findArtikelById(Integer id) throws DAOException  {
 
         Artikel result = null;
@@ -83,10 +89,11 @@ public class ArtikelDAO implements IArtikelDAO {
         return result;
     }*/
 
-    @Override
-    public ArrayList<Artikel> searchArtikel(Artikel artikel) throws DAOException {
 
-        ArrayList<Artikel>result=new ArrayList<Artikel>();
+
+
+
+
         /*
         vonArtikel a
                 id=1
@@ -193,7 +200,7 @@ public class ArtikelDAO implements IArtikelDAO {
     @Override
     public void updateArtikel(Artikel artikel) throws DAOException {
         try{
-            PreparedStatement ps=dbConnection.prepareStatement("update artikel set name=?, preis=?, gewicht=?, ablaufdatum=?, bild=? where id=?");
+            PreparedStatement ps= dbConnection.prepareStatement("update artikel set name=?, preis=?, gewicht=?, ablaufdatum=?, bild=? where id=?");
             ps.setString(1, artikel.getName());
             ps.setDouble(2, artikel.getPreis());
             ps.setDouble(3, artikel.getGewicht());

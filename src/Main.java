@@ -14,7 +14,7 @@ public class Main {
     public static void main(String args[]) {
 
         IArtikelDAO aDao = new ArtikelDAO();
-        Artikel a = new Artikel(null, "erfan", 10000.0, 10000.0, new Date(1986, 12, 20), "erfan.jpg");
+        Artikel a = new Artikel(null, "erfan", 10000.0, 10000.0, new Date(86, 11, 20), "erfan.jpg");
 
         try {
             aDao.createArtikel(a);
