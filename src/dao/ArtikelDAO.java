@@ -55,6 +55,12 @@ public class ArtikelDAO implements IArtikelDAO {
 
     }
 
+
+    @Override
+    public ArrayList<Artikel> searchArtikel(Artikel artikel) throws DAOException {
+
+        ArrayList<Artikel>result=new ArrayList<Artikel>();
+
     /*public Artikel findArtikelById(Integer id) throws DAOException  {
 
         Artikel result = null;
@@ -83,10 +89,11 @@ public class ArtikelDAO implements IArtikelDAO {
         return result;
     }*/
 
-    @Override
-    public ArrayList<Artikel> searchArtikel(Artikel artikel) throws DAOException {
 
-        ArrayList<Artikel>result=new ArrayList<Artikel>();
+
+
+
+
         /*
         vonArtikel a
                 id=1
