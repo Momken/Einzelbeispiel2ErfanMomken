@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class ArtikelDAO implements IArtikelDAO {
 
-    private static final Logger log= LogManager.getLogger(ArtikelDAO.class);git commit
+    private static final Logger log= LogManager.getLogger(ArtikelDAO.class);
     private Connection dbConnection= null;
     private DBConnection db = new DBConnection();
 
