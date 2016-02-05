@@ -9,7 +9,7 @@ import java.sql.*;
 import java.util.ArrayList;
 
 
-
+//123Test
 public class ArtikelDAO implements IArtikelDAO {
 
     private static final Logger log= LogManager.getLogger(ArtikelDAO.class);
