@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 
 //123Test
-//456Test2
+//456Test22
 public class ArtikelDAO implements IArtikelDAO {
 
     private static final Logger log= LogManager.getLogger(ArtikelDAO.class);
